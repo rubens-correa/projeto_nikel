@@ -1,6 +1,26 @@
 #login {
   background: linear-gradient(120deg, #4c79d3 44.9%, #ffff 45%) no-repeat fixed;
 }
+#app {
+  background: linear-gradient(120deg, #ffff 44.9%, #4c79d3 45%) no-repeat fixed;
+}
+
+header {
+  border-bottom: 1px solid #bebcdc;
+  padding: 5px;
+  background: #ffff;
+}
+.color-primary {
+  color: #4e0070;
+}
+.color-secundary {
+  color: #4c79d3;
+}
+.icon-detail {
+  font-size: 50px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
 .text-login {
   color: #ffff;
   font-size: 18px;
@@ -17,7 +37,14 @@
   width: 50%;
   margin: 0 25%;
 }
-.button-login:hover {
+.button-default {
+  border-radius: 10px;
+  background-color: #4e0070;
+  color: #ffff;
+}
+
+.button-login:hover,
+.button-default:hover {
   background: #4c79d3;
   color: #ffff;
 }
@@ -27,4 +54,9 @@
 }
 .link-default:hover {
   color: #4c79d3;
+}
+.info {
+  background-color: #ffff;
+  border-radius: 20px 20px 0px 0px;
+  padding: 20px 0px 0px 0px;
 }
