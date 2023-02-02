@@ -34,11 +34,8 @@ document
     });
 
     saveData(data);
-
     e.target.reset();
-
     myModal.hide();
-
     alert("Lançamento adicionado com sucesso.");
   });
 
