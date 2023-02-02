@@ -2,7 +2,7 @@ const myModal = new bootstrap.Modal("#transaction-modal");
 let logged = sessionStorage.getItem("logged");
 const session = localStorage.getItem("session");
 let data = {
-  transactions: [],
+  transactions: []
 };
 
 document.getElementById("button-loggout").addEventListener("click", logout);
@@ -28,9 +28,8 @@ document
       value: value,
       type: type,
       description: description,
-      date: date,
+      date: date
     });
-
     saveData(data);
 
     e.target.reset();
@@ -65,6 +64,8 @@ function logout() {
 
   window.location.href = "index.html";
 }
+
+function getCashIn() {}
 
 function saveData(data) {
   localStorage.setItem(data.login, JSON.stringify(data));
