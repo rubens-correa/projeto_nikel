@@ -99,9 +99,7 @@ function getCashIn() {
             </div>
           </div>
         </div>
-      </div>
-    
-      `;
+      </div>`;
       document.getElementById("cash-in-list").innerHTML = cashInHtml;
     }
   }
