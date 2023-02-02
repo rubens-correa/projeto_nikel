@@ -1,8 +1,6 @@
 const myModal = new bootstrap.Modal("#transaction-modal");
 let logged = sessionStorage.getItem("logged");
 const session = localStorage.getItem("session");
-//let cashIn = [];
-//let cashOut = [];
 let data = {
   transactions: [],
 };
@@ -56,8 +54,6 @@ function checkLogger() {
   if (dataUser) {
     data = JSON.parse(dataUser);
   }
-
-  getCashIn();
 }
 
 function logout() {
@@ -67,6 +63,7 @@ function logout() {
   window.location.href = "index.html";
 }
 
+<<<<<<< HEAD
 function getCashIn() {
   const transactions = data.transactions;
 
@@ -105,6 +102,8 @@ function getCashIn() {
   }
 }
 
+=======
+>>>>>>> parent of 1a20ef3 (lançamentos)
 function saveData(data) {
   localStorage.setItem(data.login, JSON.stringify(data));
 }
