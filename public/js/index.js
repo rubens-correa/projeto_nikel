@@ -26,7 +26,7 @@ document.getElementById("create-form").addEventListener("submit", function (e) {
   myModal.hide();
   alert("Conta criada com sucesso!");
 });
-
+//pers
 function saveAccount(data) {
   localStorage.setItem(data.login, JSON.stringify(data));
 }
