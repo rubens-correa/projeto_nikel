@@ -89,7 +89,8 @@ function getCashIn() {
     } else {
       limit = cashIn.length;
     }
-    for (let index = 0; index < limit.length; index++) {
+    for (let index = 0; index < limit; index++) {
+      console.log("Entrou!");
       cashInHtml += `
       <div class="row mb-4">
         <div class="col-12">
@@ -110,8 +111,10 @@ function getCashIn() {
       </div>
       `
     }
+    console.log(cashInHtml);
     document.getElementById("cash-in-list").innerHTML = cashInHtml;
   }
+  
 }
 
 function getCashOut() {
@@ -126,7 +129,7 @@ function getCashOut() {
     } else {
       limit = cashIn.length;
     }
-    for (let index = 0; index < limit.length; index++) {
+    for (let index = 0; index < limit; index++) {
       cashInHtml += `
       <div class="row mb-4">
       <div class="col-12">
